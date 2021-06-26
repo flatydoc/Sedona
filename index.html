@@ -16,7 +16,7 @@
       <nav class="main-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="info.html">Информиция</a>
+            <a href="info.html">Информация</a>
           </li>
           <li class="navigation-item">
             <a href="media.html">Фото и видео</a>
@@ -124,7 +124,7 @@
         </div>
       </div>
       <div class="interested">
-        <h2>Заинтересовались?</h2>
+        <b>Заинтересовались?</b>
         <p>
           Укажите предполагаемые даты поездки,<br />
           и мы покажем вам лучшие предложения гостиниц в седоне
@@ -148,5 +148,33 @@
         </a>
       </p>
     </footer>
+    <div class="form">
+      <form
+        class="hotels-search-form"
+        action="https://echo.htmlacademy.ru"
+        method="POST"
+      >
+        <div class="form-item">
+          <label for="enter-date" class="form-label">дата заезда:</label>
+          <input
+            type="date"
+            id="enter-date"
+            class="form-input"
+            name="enter-date"
+            value="2021-07-03"
+          />
+        </div>
+        <div class="form-item">
+          <label for="exit-date" class="form-label">дата выезда:</label>
+          <input
+            type="date"
+            id="exit-date"
+            class="form-input"
+            name="exit-date"
+            value="2021-07-28"
+          />
+        </div>
+      </form>
+    </div>
   </body>
 </html>

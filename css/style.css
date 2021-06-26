@@ -171,7 +171,7 @@ h4 {
 }
 
 .interested {
-  height: 256px;
+  height: 236px;
   padding-top: 55px;
 
   text-align: center;
@@ -180,13 +180,14 @@ h4 {
   background-color: white;
 }
 
-.interested h2 {
+.interested b {
   font-size: 30px;
   font-weight: 700;
 }
 
 .interested button {
-  margin-top: 34px;
+  margin-top: 44px;
+  padding: 0;
   width: 568px;
   height: 86px;
   border: none;
@@ -198,6 +199,16 @@ h4 {
   line-height: 26px;
 
   background-color: #766357;
+}
+
+.interested button:hover {
+  background-color: #604e43;
+}
+
+.interested button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
 }
 
 .main-footer {
@@ -236,13 +247,33 @@ h4 {
   text-align: center;
 }
 
-.appointment-form {
+.form {
   width: 568px;
   height: 395px;
-  margin: 55px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.hotels-search-form {
+  padding: 55px;
   border: 1px solid black;
 
   font-weight: 700;
+  line-height: 26px;
+}
+
+.form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.form-input {
+  width: 346px;
+  height: 38px;
+  border: none;
+
+  background-color: rgb(216, 216, 216);
 }
 
 .visually-hidden {
