@@ -223,7 +223,7 @@ h3,
   background-color: #604e43;
 }
 
-.interested button:active {
+.interested :active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #503e33;
@@ -238,7 +238,7 @@ h3,
 
   line-height: 26px;
 
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer p {
@@ -439,6 +439,59 @@ h3,
   color: black;
 
   background-color: white;
+}
+
+.sorting {
+  display: flex;
+  align-items: center;
+  min-height: 86px;
+  padding: 0 75px;
+  border: 2px solid red;
+
+  background-color: white;
+}
+
+.sorting b {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sorting span {
+  padding-left: 30px;
+}
+
+.sorting-list {
+  display: flex;
+  padding-left: 30px;
+}
+
+.sorting-list li {
+  padding: 10px;
+}
+
+.sorting-button {
+  border: none;
+  border-bottom: 1px dotted #81b3d2;
+
+  font-size: 12px;
+  line-height: 18px;
+  opacity: 0.3;
+  text-transform: uppercase;
+
+  background-color: inherit;
+}
+
+.sorting-button:hover,
+.sorting-button:focus {
+  opacity: 1;
+  color: #81b3d2;
+}
+
+.sorting-button:active {
+  opacity: 1;
+  color: black;
+  border: none;
 }
 
 .visually-hidden {
