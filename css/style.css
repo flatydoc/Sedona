@@ -9,8 +9,6 @@ body {
   line-height: 21px;
 
   background-color: #f2f2f2;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .page-wrapper {
@@ -374,6 +372,73 @@ h3,
 
 .button:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+/* Hotels*/
+
+.filters {
+  min-height: 217px;
+  padding: 26px 75px 0 75px;
+
+  color: white;
+
+  background-color: #81b3d2;
+  background-image: url(../img/filter_background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.filters h2 {
+  margin: 0;
+  padding-bottom: 25px;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filters ul {
+  margin: 0;
+}
+
+.filters li {
+  padding-bottom: 25px;
+}
+
+.filters-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+}
+
+.cost {
+  width: 300px;
+}
+
+.filters button {
+  width: 137px;
+  height: 36px;
+  border: 2px solid white;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  background: transparent;
+}
+
+.filters button:hover {
+  border-radius: 2px;
+
+  color: black;
+
+  background-color: white;
 }
 
 .visually-hidden {
