@@ -54,6 +54,17 @@ hr {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-header {
   min-height: 584px;
 
@@ -112,8 +123,6 @@ hr {
   min-height: 256px;
 
   color: white;
-
-  background-color: #81b3d2;
 }
 
 .reason2 {
@@ -127,6 +136,8 @@ hr {
 
   color: white;
   text-align: center;
+
+  background-color: #81b3d2;
 }
 
 .reason1-image {
@@ -136,6 +147,7 @@ hr {
   background-image: url(../img/Layer_10.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: white;
 }
 
 .reason2-image {
@@ -145,6 +157,7 @@ hr {
   background-image: url(../img/Layer_5.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: white;
 }
 
 .advantages-list {
@@ -282,14 +295,33 @@ hr {
 }
 
 .social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
 
   background-color: #81b3d2;
 }
 
+.social-button path {
+  fill: white;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active path {
+  opacity: 0.3;
+}
+
 .footer-coopyright {
+  display: flex;
   flex-grow: 1;
+  align-items: center;
+  justify-content: center;
 
   min-width: 370px;
   min-height: 70px;
@@ -298,8 +330,29 @@ hr {
   text-align: center;
 }
 
-.footer-coopyright a {
-  content: url(../img/html_academy.png);
+.coopyright-link {
+  display: flex;
+  align-items: center;
+}
+
+.coopyright-link:hover path,
+.coopyright-link:focus path {
+  fill: #81b3d2;
+}
+
+.coopyright-link:active path {
+  fill: grey;
+}
+
+.coopyright-logo {
+  padding-top: 5px;
+}
+
+.coopyright-name {
+  text-transform: none;
+  font-size: 18px;
+  line-height: 12px;
+  text-align: left;
 }
 
 .index-form {
@@ -509,15 +562,4 @@ hr {
   min-height: 90px;
   border-bottom: 2px solid #f2f2f2;
   padding: 30px 75px 30px 75px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
