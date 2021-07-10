@@ -255,6 +255,7 @@ hr {
   align-items: center;
   justify-content: space-between;
   min-height: 120px;
+  padding-top: 20px;
 
   line-height: 26px;
 
@@ -269,7 +270,6 @@ hr {
   flex-grow: 1;
   min-width: 370px;
   min-height: 70px;
-  padding-top: 20px;
 }
 
 .footer-contacts div {
@@ -284,7 +284,6 @@ hr {
   flex-grow: 1;
   min-width: 370px;
   min-height: 70px;
-  padding-top: 20px;
 }
 
 .social-list {
@@ -320,19 +319,20 @@ hr {
 .footer-coopyright {
   display: flex;
   flex-grow: 1;
-  align-items: center;
   justify-content: center;
 
   min-width: 370px;
   min-height: 70px;
-  padding-top: 20px;
 
   text-align: center;
 }
 
+.coopyright {
+  padding-top: 10px;
+}
+
 .coopyright-link {
   display: flex;
-  align-items: center;
 }
 
 .coopyright-link:hover path,
@@ -344,15 +344,13 @@ hr {
   fill: grey;
 }
 
-.coopyright-logo {
-  padding-top: 5px;
-}
-
 .coopyright-name {
+  padding-top: 10px;
+
+  text-align: left;
   text-transform: none;
   font-size: 18px;
   line-height: 12px;
-  text-align: left;
 }
 
 .index-form {
@@ -367,6 +365,10 @@ hr {
 
   font-weight: 700;
   line-height: 26px;
+}
+
+.search-form input {
+  border: 2px solid transparent;
 }
 
 .form-item {
@@ -457,7 +459,7 @@ hr {
 }
 
 .filters li {
-  padding-bottom: 25px;
+  padding-bottom: 45px;
 }
 
 .filters-form {
@@ -469,6 +471,34 @@ hr {
   display: flex;
   justify-content: space-between;
   width: 380px;
+}
+
+.checkbox-item {
+  position: relative;
+}
+
+.checkbox-description {
+  padding-left: 40px;
+}
+
+.filters-columns input[type="checkbox"] + .checkbox-label {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.filters-columns input[type="checkbox"]:checked + .checkbox-label {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .cost {
@@ -539,8 +569,7 @@ hr {
   background-color: inherit;
 }
 
-.sorting-button:hover,
-.sorting-button:focus {
+.sorting-button:hover {
   opacity: 1;
   color: #81b3d2;
 }
@@ -549,6 +578,32 @@ hr {
   opacity: 1;
   color: black;
   border: none;
+}
+
+.sorting-button:focus {
+  opacity: 1;
+  border: none;
+}
+
+.arrows-list {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.arrow-button {
+  margin-left: 10px;
+  border: none;
+  background: transparent;
+}
+
+.arrow-button:hover path {
+  fill: black;
+}
+
+.arrow-button:active path,
+.arrow-button:focus path {
+  fill: #81b3d2;
 }
 
 .hotels {

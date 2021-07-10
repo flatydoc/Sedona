@@ -53,34 +53,76 @@
               <div>
                 <h2>Инфраструктура:</h2>
                 <ul>
-                  <li>
-                    <input type="checkbox" id="pool" name="pool" />
-                    <label for="pool">бассейн</label>
+                  <li class="checkbox-item">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="pool"
+                      name="pool"
+                    />
+                    <label class="checkbox-label" for="pool">
+                      <span class="checkbox-description">бассейн</span>
+                    </label>
                   </li>
-                  <li>
-                    <input type="checkbox" id="parking" name="parking" />
-                    <label for="parking">парковка</label>
+                  <li class="checkbox-item">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="parking"
+                      name="parking"
+                    />
+                    <label class="checkbox-label" for="parking">
+                      <span class="checkbox-description">парковка</span>
+                    </label>
                   </li>
-                  <li>
-                    <input type="checkbox" id="wi-fi" name="wi-fi" />
-                    <label for="wi-fi">wi-fi</label>
+                  <li class="checkbox-item">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="wi-fi"
+                      name="wi-fi"
+                    />
+                    <label class="checkbox-label" for="wi-fi">
+                      <nobr class="checkbox-description">wi-fi</nobr>
+                    </label>
                   </li>
                 </ul>
               </div>
               <div>
                 <h2>Тип жилья:</h2>
                 <ul>
-                  <li>
-                    <input type="checkbox" id="hotel" name="hotel" />
-                    <label for="hotel">гостиница</label>
+                  <li class="checkbox-item">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="hotel"
+                      name="hotel"
+                    />
+                    <label class="checkbox-label" for="hotel">
+                      <span class="checkbox-description">гостиница</span>
+                    </label>
                   </li>
-                  <li>
-                    <input type="checkbox" id="motel" name="motel" />
-                    <label for="motel">мотель</label>
+                  <li class="checkbox-item">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="motel"
+                      name="motel"
+                    />
+                    <label class="checkbox-label" for="motel">
+                      <span class="checkbox-description">мотель</span>
+                    </label>
                   </li>
-                  <li>
-                    <input type="checkbox" id="apartment" name="apartment" />
-                    <label for="wi-fi">апартаменты</label>
+                  <li class="checkbox-item">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="apartment"
+                      name="apartment"
+                    />
+                    <label class="checkbox-label" for="apartment">
+                      <span class="checkbox-description">апартаменты</span>
+                    </label>
                   </li>
                 </ul>
               </div>
@@ -103,6 +145,36 @@
             </li>
             <li>
               <button class="sorting-button" type="button">по рейтингу</button>
+            </li>
+          </ul>
+          <ul class="arrows-list">
+            <li>
+              <button class="arrow-button" type="button">
+                <span class="visually-hidden">вверх</span>
+                <svg
+                  width="11"
+                  height="10"
+                  viewBox="0 0 11 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="arrow-button" type="button">
+                <span class="visually-hidden">вверх</span>
+                <svg
+                  width="11"
+                  height="10"
+                  viewBox="0 0 11 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5.5 10L0 0H11" fill="#CACACA" />
+                </svg>
+              </button>
             </li>
           </ul>
         </div>
@@ -133,20 +205,59 @@
         </div>
         <div class="footer-social">
           <ul class="social-list">
-            <li class="social-button">
-              <a class="twitter" href="#">Twitter</a>
+            <li class="twitter">
+              <a class="social-button" href="#"
+                ><span class="visually-hidden">Twitter</span>
+                <svg width="17.5" height="14.663">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"
+                  ></path>
+                </svg>
+              </a>
             </li>
-            <li class="social-button">
-              <a class="Facebook" href="#">Facebook</a>
+            <li class="facebook">
+              <a class="social-button" href="#"
+                ><span class="visually-hidden">Facebook</span>
+                <svg width="10" height="20">
+                  <path
+                    d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"
+                  ></path>
+                </svg>
+              </a>
             </li>
-            <li class="social-button">
-              <a class="Youtube" href="#">Youtube</a>
+            <li class="youtube">
+              <a class="social-button" href="#"
+                ><span class="visually-hidden">Youtube</span>
+                <svg width="20" height="14.663">
+                  <path
+                    d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"
+                  ></path>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="footer-coopyright">
-          <span>website by</span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML_ACADEMY </a>
+          <span class="coopyright">website by</span>
+          <a
+            class="coopyright-link"
+            href="https://htmlacademy.ru/intensive/htmlcss"
+          >
+            <svg
+              class="coopyright-logo"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 60 60"
+              width="40px"
+              height="53px"
+            >
+              <path
+                d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"
+              />
+            </svg>
+            <span class="coopyright-name">html<br />academy</span>
+          </a>
         </div>
       </footer>
     </div>
