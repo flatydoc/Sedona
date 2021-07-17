@@ -618,3 +618,21 @@ hr {
   border-bottom: 2px solid #f2f2f2;
   padding: 30px 75px 30px 75px;
 }
+
+.hotel-description {
+  padding-left: 30px;
+}
+
+.hotel-description h2 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.hotel-description table {
+  border-spacing: 0;
+}
+
+.hotel-description td {
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
